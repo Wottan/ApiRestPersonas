@@ -28,7 +28,6 @@ public class PersonaServiceImpl implements IPersonaService {
 		return personaDao.findByNombre(persona.getNombre());
 	}
 
-
 	@Override
 	@Transactional
 	public void deletePersona(Persona persona) {
@@ -72,6 +71,11 @@ public class PersonaServiceImpl implements IPersonaService {
 	public void save(Persona persona) {
 		personaDao.save(persona);
 
+	}
+
+	@Override
+	public void deleteAllPersona() {
+		personaDao.deleteAll();
 	}
 
 }

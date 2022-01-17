@@ -13,6 +13,8 @@ public interface IPersonaService {
 
 	public void deletePersona(Persona persona);
 
+	public void deleteAllPersona();
+
 	public Optional<Persona> findPersonaById(Long id);
 
 	public void deletePersona(Long id);
